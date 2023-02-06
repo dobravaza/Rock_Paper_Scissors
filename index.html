@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="flex">
+        <h1>Rock Paper Scisorss</h1>
+        <h2>Choose Your Weapon</h2>
+        <div class="optionBtn">
+            <button id="rock"> rock</button>
+            <button id="paper"> paper </button>
+            <button id="scissors"> scisorss </button>
+        </div>
+        <div class="labels">
+            <span id="playerLabel">PLAYER </span>
+            <span id="compLabel">ROBOT</span>
+        </div>
+        <div class="scores">
+            <div class="x" id="playerScore"></div>
+            <div class="y" id="computerScore"></div>
+        </div>
+
+
+        <div id="roundResult"></div>
+
+        <h3>First to 5 Wins!</h3>
+        <button id="reset">Reset</button>
+    </div>
+
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
