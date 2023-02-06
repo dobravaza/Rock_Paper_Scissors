@@ -40,6 +40,13 @@ scissors.addEventListener('click', function () {
 
 function playRound(playerSelection) {
 	if (playerScore === 5 || computerScore === 5) {
+		playerScore = 0
+		computerScore = 0
+		roundCounter = 0
+		roundResult.textContent = 'Game Over, do we play again?'
+		roundResult.style.color = 'blue'
+		computerScores.textContent = ''
+		playerScre.textContent = ''
 		return // end the game
 	}
 
@@ -53,6 +60,7 @@ function playRound(playerSelection) {
 		playerScore++
 		playerScre.textContent = playerScore
 		roundResult.textContent = `Player Wins! ${playerSelection} beats ${computerSelection}`
+		roundResult.style.color = `green`
 	} else if (
 		(playerSelection === 'rock' && computerSelection === 'paper') ||
 		(playerSelection === 'paper' && computerSelection === 'scissors') ||
@@ -62,7 +70,9 @@ function playRound(playerSelection) {
 		computerScore++
 		computerScores.textContent = computerScore
 		roundResult.textContent = `That is a point for a computer ${playerSelection} loses with ${computerSelection}`
+		roundResult.style.color = `red`
 	} else {
 		roundResult.textContent = 'Tie'
+		roundResult.style.color = `black`
 	}
 }
