@@ -17,18 +17,17 @@ body {
 
 h1 {
 	font-size: 3rem;
-	color: rgb(109, 11, 11);
+	color: rgb(255, 0, 0);
 	font-weight: 900;
 	text-align: center;
 }
 
 h2 {
 	font-weight: 500;
-	color: blueviolet;
+	color: rgb(129, 13, 133);
 }
 
 button {
-	/* flex: 1; */
 	margin: 0px 30px;
 	padding: 20px 50px;
 	color: black;
